@@ -1,0 +1,5 @@
+if(EXISTS "/home/hayden/cppprojects/AV-Technical/build/nmp_test[1]_tests.cmake")
+  include("/home/hayden/cppprojects/AV-Technical/build/nmp_test[1]_tests.cmake")
+else()
+  add_test(nmp_test_NOT_BUILT nmp_test_NOT_BUILT)
+endif()

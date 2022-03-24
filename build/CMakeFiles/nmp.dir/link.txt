@@ -1,0 +1,1 @@
+g++  -pthread CMakeFiles/nmp.dir/main.cpp.o -o ../nmp 

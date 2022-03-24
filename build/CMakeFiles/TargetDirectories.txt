@@ -1,0 +1,3 @@
+/home/hayden/cppprojects/AV-Technical/build/CMakeFiles/nmp.dir
+/home/hayden/cppprojects/AV-Technical/build/CMakeFiles/edit_cache.dir
+/home/hayden/cppprojects/AV-Technical/build/CMakeFiles/rebuild_cache.dir
