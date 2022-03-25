@@ -73,15 +73,15 @@ CMakeFiles/nmp.dir/main.cpp.o: CMakeFiles/nmp.dir/flags.make
 CMakeFiles/nmp.dir/main.cpp.o: ../main.cpp
 CMakeFiles/nmp.dir/main.cpp.o: CMakeFiles/nmp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hayden/cppprojects/AV-Technical/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nmp.dir/main.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nmp.dir/main.cpp.o -MF CMakeFiles/nmp.dir/main.cpp.o.d -o CMakeFiles/nmp.dir/main.cpp.o -c /home/hayden/cppprojects/AV-Technical/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nmp.dir/main.cpp.o -MF CMakeFiles/nmp.dir/main.cpp.o.d -o CMakeFiles/nmp.dir/main.cpp.o -c /home/hayden/cppprojects/AV-Technical/main.cpp
 
 CMakeFiles/nmp.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nmp.dir/main.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hayden/cppprojects/AV-Technical/main.cpp > CMakeFiles/nmp.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hayden/cppprojects/AV-Technical/main.cpp > CMakeFiles/nmp.dir/main.cpp.i
 
 CMakeFiles/nmp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nmp.dir/main.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hayden/cppprojects/AV-Technical/main.cpp -o CMakeFiles/nmp.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hayden/cppprojects/AV-Technical/main.cpp -o CMakeFiles/nmp.dir/main.cpp.s
 
 # Object files for target nmp
 nmp_OBJECTS = \

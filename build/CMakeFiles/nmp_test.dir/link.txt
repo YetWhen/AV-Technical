@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread CMakeFiles/nmp_test.dir/nmp_test.cpp.o -o ../nmp_test  lib/libgtest_main.a lib/libgtest.a -lpthread 
