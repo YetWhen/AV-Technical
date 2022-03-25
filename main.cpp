@@ -2,7 +2,9 @@
 #include "gtest/gtest.h"
 #include <thread>
 #include <cmath> 
+#include <mutex>
 
+std::mutex myMutex;
 const int values[] = { 1,2,3,4,5 };
 const int NVALS = sizeof values / sizeof(int);
 void function(char(*ptr)[4]);
@@ -24,6 +26,8 @@ public:
     int getMoney() { return mMoney; }
     void addMoney(int money)
     {
+        //use lock_guard to avoid multiple thread accessing this function at the same time
+        std::lock_guard<std::mutex> guard(myMutex);
         mMoney += money;       //instead of doing multiple steps, reduce the duplicated operation loops
     }
 };
@@ -102,7 +106,7 @@ int main()
     // Question 7 Fix the compiler errors and race conditions
     // Convert the testerFunction() into a google test
     int val = 0;
-    for (int k = 0; k < 5000; k++)        //changed iteration times to 5000, to easier catch race condition
+    for (int k = 0; k < 1000; k++)        //changed iteration times to 5000, to easier catch race condition
     {
         if ((val = testerFunction()) != 5000)
         {
@@ -132,6 +136,7 @@ int main()
         putchar(c);
     }*/
     char c;
+    //assume this loop is to print all the character get until reaching end of file
     c = getchar();
     while (c != EOF)
     {
